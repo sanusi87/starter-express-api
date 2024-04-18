@@ -33,7 +33,7 @@ module.exports.pdf = (req, res) => {
 				if( err ){
 					res.json({
 						status: 0,
-						message: err.toString()
+						message: 'Read Error: '+err.toString()
 					});
 				}else{
 					// res.setHeader('Content-Type', 'application/octet-stream');
@@ -111,7 +111,7 @@ module.exports.xlsx = (req, res) => {
 			if( err ){
 				res.json({
 					status: 0,
-					message: err.toString()
+					message: 'Write Error: '+err.toString()
 				});
 			}else{
 				res.json({

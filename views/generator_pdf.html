@@ -1,0 +1,30 @@
+<%- include ("./header.ejs") -%>
+
+<section class="wrapper bg-gray">
+	<div class="container pt-10 pb-14 pb-md-16">
+		<form id="generate-pdf-form">
+			<div class="card">
+				<div class="card-header">
+					<span class="card-text">PDF Content</span>
+				</div>
+				<div class="card-body">
+					<div class="form-floating mb-4">
+						<input id="font-size" name="font-size" type="text" class="form-control" placeholder="Font Size" value="8">
+						<label for="font-size">Font Size</label>
+					</div>
+
+					<div id="pdf-row-list"></div>
+
+					<button class="btn btn-success btn-sm" type="button" id="add-row"> <i class="uil uil-plus"></i> Add Row</button>
+				</div>
+				<div class="card-footer text-right">
+					<button class="btn btn-blue btn-sm" type="button" id="start-generate">Generate</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+
+<script type="text/javascript" src="/assets/js/pages/generate_pdf.js"></script>
+
+<%- include ("./footer.ejs") -%>

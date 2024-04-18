@@ -1,0 +1,41 @@
+<%- include ("./header.ejs") -%>
+
+<section class="wrapper bg-gray">
+	<div class="container pt-10 pb-14 pb-md-16">
+		<form id="generate-pdf-form">
+			<div class="card">
+				<div class="card-header">
+					<span class="card-text">XLSX Content</span>
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="form-floating mb-4">
+								<input id="font-size" name="font-size" type="text" class="form-control" placeholder="Font Size" value="8">
+								<label for="font-size">Font Size</label>
+							</div>
+		
+							<div class="form-floating mb-4">
+								<input id="no-of-rows" name="no-of-rows" type="text" class="form-control" placeholder="Number of rows" value="8">
+								<label for="no-of-rows">Number of rows</label>
+							</div>
+		
+							<div class="form-floating mb-4">
+								<input id="no-of-columns" name="no-of-columns" type="text" class="form-control" placeholder="Number of columns" value="4">
+								<label for="no-of-columns">Number of columns</label>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6"></div>
+					</div>
+				</div>
+				<div class="card-footer text-right">
+					<button class="btn btn-blue btn-sm" type="button" id="start-generate">Generate</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+
+<script type="text/javascript" src="/assets/js/pages/generate_xlsx.js"></script>
+
+<%- include ("./footer.ejs") -%>

@@ -26,4 +26,32 @@ jQuery(function($){
 
 		return t;
 	}
+
+	$.fn.addFile = function(file){
+		var t = $(this);
+
+		t.append(`<div class="list-group-item">
+			<div class="row">
+				<div class="col-md-8 col-sm-8">
+					<div class="mb-2"><i class="uil uil-file-alt"></i> <span>${file.name}</span></div>
+					<small class="file-date text-danger">${file.created_at}</small>
+				</div>
+				<div class="col-md-4 col-sm-4 text-end">
+					<button class="btn btn-sm btn-outline-danger px-1 py-0" data-file-name="${file.name}" type="button">
+						<i class="uil uil-times"></i>
+					</button>
+				</div>
+			</div>
+		</div>`);
+
+		t.children(':last').click(function(){
+			console.log( file );
+
+			$('#delete-confirmation-modal').modal('show', file);
+
+			return false;
+		});
+
+		return t;
+	}
 })(jQuery)

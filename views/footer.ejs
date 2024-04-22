@@ -23,7 +23,7 @@
 		<script type="text/javascript" src="/assets/js/common.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js"></script>
 
-		<!-- modal -->
+		<!-- modal file list -->
 		<div class="modal fade" tabindex="-1" id="file-generated-modal">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -40,6 +40,27 @@
 				</div>
 			</div>
 		</div>
+		<!-- end -->
+
+		<!-- modal delete confirmation -->
+		<div class="modal fade" tabindex="-1" id="delete-confirmation-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Confirmation</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body py-0">
+						<p>Delete this file <span class="strong" id="selected-file"></span>?</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+						<button type="button" class="btn btn-primary" id="confirm-delete">Yes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
 		  
 	</body>
 </html>

@@ -1,0 +1,36 @@
+<%- include ("./header.ejs") -%>
+
+<style type="text/css">
+.file-date{
+	position: absolute;
+	top: 34px;
+	font-style: italic;
+}
+</style>
+
+<section class="wrapper bg-gray">
+	<div class="container pt-10 pb-14 pb-md-16">
+
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="card">
+					<div class="card-header">
+						<span class="card-text">Files</span>
+					</div>
+					<div class="card-body">
+						<div class="list-group" id="fetched-files"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+
+			</div>
+		</div>
+
+		
+	</div>
+</section>
+
+<script type="text/javascript" src="/assets/js/pages/files_index.js"></script>
+
+<%- include ("./footer.ejs") -%>

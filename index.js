@@ -18,5 +18,8 @@ const routes = require('./routes');
 app.get('/', routes.site.index);
 app.all('/generate/pdf', routes.generator.pdf);
 app.all('/generate/xlsx', routes.generator.xlsx);
+app.all('/files', routes.files.index);
+app.all('/files/list', routes.files.files_list);
+app.delete('/files/list/:filename', routes.files.files_list);
 
 app.listen(3000)

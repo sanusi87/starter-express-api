@@ -1,4 +1,5 @@
 node_modules
 slots/*
 package-lock.json
-public/tmp/*
+public/tmp/*.pdf
+public/tmp/*.xlsx
